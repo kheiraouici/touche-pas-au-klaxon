@@ -1,0 +1,38 @@
+<?php
+require ('./navbar1.php')
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<body>
+<table class="table table-bordered">
+    <thead class="table-light">
+        <tr>
+            <th>Agence de départ</th>
+            <th>Date de départ</th>
+            <th>Agence d'arrivée</th>
+            <th>Date d'arrivée</th>
+            <th>Places disponibles</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($trajets as $trajet): ?>
+            <tr>
+                <td><?= htmlspecialchars($trajet['ville_depart']) ?></td>
+                <td><?= date("d/m/Y H:i", strtotime($trajet['date_depart'])) ?></td>
+                <td><?= htmlspecialchars($trajet['ville_arrivee']) ?></td>
+                <td><?= date("d/m/Y H:i", strtotime($trajet['date_arrivee'])) ?></td>
+                <td><?= intval($trajet['places_disponibles']) ?></td>
+            </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>
+</body>
+</html>
