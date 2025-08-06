@@ -1,5 +1,5 @@
 <?php
-require ("./app/views/Navbar1.php") ;
+require ("../navbar1.php") ;
 
 if(isset($_GET["name"]) && !empty($_GET["name"])){
     $name = $_GET["name"];
@@ -32,3 +32,6 @@ echo ("bonjour $name , nous avons bien reçu votrr mot de passe $keypass");
         <?php endforeach; ?>
     </tbody>
 </table>
+<?php
+require ('../footer.php')
+?>

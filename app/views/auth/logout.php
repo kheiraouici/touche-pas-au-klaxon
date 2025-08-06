@@ -1,4 +1,5 @@
 <?php
+require ('../navbar1.php');
 // Démarrer la session
 session_start();
 
@@ -20,4 +21,6 @@ session_destroy();
 // Rediriger vers la page de connexion ou d'accueil
 header("Location: login.php");
 exit();
+
+require ('../footer.php');
 ?>

@@ -36,3 +36,6 @@ require ('./navbar1.php')
 </table>
 </body>
 </html>
+<?php
+require ('./footer.php')
+?>

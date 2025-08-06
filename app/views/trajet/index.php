@@ -21,3 +21,7 @@ require ('../navbar1.php')
     </ul>
 </body>
 </html>
+
+<?php
+require ('../footer.php')
+?>

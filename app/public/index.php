@@ -1,5 +1,5 @@
 <?php
-
+$prefixUrl = '/touche-pas-au-klaxon/app/views/';
 
 use App\Controllers\AuthController;
 use App\Controllers\TrajetController;

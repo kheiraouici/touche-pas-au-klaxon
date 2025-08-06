@@ -21,8 +21,18 @@ switch ($request) {
     case '/connexion':
         require __DIR__ . '/controllers/connexion.php';
         break;
-
+      
+    case '../create.php' :
+         require __DIR__ . '/controllers/create.php';
+        break;
        
+         case '../index.php' :
+         require __DIR__ . '/controllers/index.php';
+        break;
+
+        case '../logout.php' :
+         require __DIR__ . '/controllers/logout.php';
+        break;
     default:
         http_response_code(404);
         require __DIR__ . '/controllers/page404.php';
