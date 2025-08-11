@@ -1,6 +1,4 @@
-<?php 
-require ('./Navbar1.php')
-?>
+
 
 
 <!DOCTYPE html>
@@ -11,6 +9,9 @@ require ('./Navbar1.php')
     <title>Document</title>
 </head>
 <body>
+    <?php require_once __DIR__ . '/partials/navbar.php'; ?>
+
+
     <main>
         <form action="./auth/login.php" method="get">
             <fieldset>
@@ -26,5 +27,7 @@ require ('./Navbar1.php')
             </fieldset>
         </form>
     </main>
+    <?php require_once __DIR__ . '/partials/footer.php'; ?>
+
 </body>
 </html>

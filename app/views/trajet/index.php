@@ -1,6 +1,4 @@
-<?php
-require ('../navbar1.php')
-?>
+
 
 
 <!DOCTYPE html>
@@ -10,6 +8,7 @@ require ('../navbar1.php')
     <title>Liste des trajets</title>
 </head>
 <body>
+    <?php require_once __DIR__ . '/../partials/navbar.php'; ?>
     <h1>Trajets disponibles</h1>
     <ul>
         <?php foreach ($trajets as $trajet): ?>
@@ -19,9 +18,9 @@ require ('../navbar1.php')
             </li>
         <?php endforeach; ?>
     </ul>
+    <?php require_once __DIR__ . '/../partials/footer.php'; ?>
+
+
 </body>
 </html>
 
-<?php
-require ('../footer.php')
-?>

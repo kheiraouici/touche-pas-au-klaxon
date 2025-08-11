@@ -1,5 +1,5 @@
 <?php
-require ('../navbar1.php');
+ require_once __DIR__ . '/../partials/navbar.php';
 // Démarrer la session
 session_start();
 
@@ -22,5 +22,5 @@ session_destroy();
 header("Location: login.php");
 exit();
 
-require ('../footer.php');
+require_once __DIR__ . '/../partials/footer.php';
 ?>

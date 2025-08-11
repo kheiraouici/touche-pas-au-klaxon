@@ -1,6 +1,4 @@
-<?php
-require ('./Navbar1.php')
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +9,9 @@ require ('./Navbar1.php')
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 <body>
+    <?php require_once __DIR__ . '/partials/navbar.php'; ?>
+
+
    <table class="table table-bordered">
     <thead class="table-light">
         <tr>
@@ -58,8 +59,7 @@ require ('./Navbar1.php')
     <span>email : xxxxxxxxx</span>
     <span>nombres total de place : xxxxx</span>
 </div>
+<?php require_once __DIR__ . '/partials/footer.php'; ?>
+
 </body>
 </html>
-<?php
-require ("./footer.php");
-?>

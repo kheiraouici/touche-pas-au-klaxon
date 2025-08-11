@@ -1,5 +1,12 @@
 <?php
 $prefixUrl = '/touche-pas-au-klaxon/app/views/';
+require 'vendor/autoload.php';
+
+
+declare(strict_types=1); define('BASE_PATH', dirname(__DIR__)); 
+// .../app define('VIEW_PATH', BASE_PATH . '/views'); require BASE_PATH . '/../vendor/autoload.php'; // charge l'autoload Composer session_start();//
+
+
 
 use App\Controllers\AuthController;
 use App\Controllers\TrajetController;

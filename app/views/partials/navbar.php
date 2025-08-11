@@ -1,12 +1,4 @@
-
-
-
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <title>Navbar Admin</title>
-  <style>
+<style>
     body {
       margin: 20px;
       font-family: Arial, sans-serif;
@@ -64,22 +56,18 @@
       background-color: #000;
     }
   </style>
-</head>
-<body>
 
-  <div class="navbar">
+
+<nav class="navbar">
     <div class="navbar-left">Touche pas au klaxon</div>
     <div class="nav-buttons">
-      <a href="./connexion.php"><button class="">Utilisateurs</button></a>
-     <a href="./connexion.php"> <button>Agences</button></a>
-      <a href="./trajet/Create.php"><button>Trajets</button></a>
+      <a href="./formulaire.php"><button class="">Utilisateurs</button></a>
+     <a href="../trajet/index.php"> <button>Agences</button></a>
+      <a href="../trajet/Create.php"><button>Trajets</button></a>
       <a href="./Home.php"><button>home</button></a>
     </div>
     <div class="navbar-right">
       <span>Bonjour Xxxxxx Xxxxx</span>
       <a href="./auth/logout.php"><button class="logout-button">Déconnexion</button></a>
     </div>
-  </div>
-
-</body>
-</html>
+  </nav>

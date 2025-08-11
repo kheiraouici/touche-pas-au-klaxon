@@ -1,5 +1,6 @@
-<?php
-require ("../navbar1.php") ;
+<?php require_once __DIR__ . '/../partials/navbar.php'; ?>
+
+
 
 if(isset($_GET["name"]) && !empty($_GET["name"])){
     $name = $_GET["name"];
@@ -32,6 +33,4 @@ echo ("bonjour $name , nous avons bien reçu votrr mot de passe $keypass");
         <?php endforeach; ?>
     </tbody>
 </table>
-<?php
-require ('../footer.php')
-?>
+<?php require_once __DIR__ . '/../partials/footer.php'; ?>
